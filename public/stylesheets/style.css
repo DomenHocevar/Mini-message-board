@@ -1,8 +1,53 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+}
+
+#messageBoard {
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 0;
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  border-radius: 5%;
+}
+
+.messageText {
+  padding: 10px 5px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+
+.message {
+  width: 40vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+.messageAdded {
+  margin-top: 2px;
+}
+
+.messageUser {
+  margin-bottom: 2px;
+}
+
+#newMessageButton {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  max-width: 40vw;
 }

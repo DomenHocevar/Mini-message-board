@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  h1 Mini message board
+
+  #messageBoard
+
+    button(id="newMessageButton") Add a new message
+
+    each message in messages 
+      div(class="message")
+        div(class="messageUser")= 'User: ' + message.user
+        div(class="messageText")= message.text 
+        div(class="messageAdded")= 'Written on: ' + message.added.toLocaleString('en-GB', { timeZone: 'UTC' })
