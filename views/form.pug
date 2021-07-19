@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h2 Create a new message
+    form(method="POST" action="/new") 
+        label(for="userInput") Your username: 
+            input(type="text" id="userInput" name="user")
+        label(for="textInput") Your text message: 
+            input(type="text" id="textInput" name="text")
+        input(type="submit")
+        
+    

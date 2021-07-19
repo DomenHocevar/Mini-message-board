@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var newMessageRouter = require('./newMessage');
 
 const messages = [
   {
@@ -16,7 +17,9 @@ const messages = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', messages: messages });
+  res.render('index', { title: 'Mini message board', messages: messages });
 });
+
+router.use('/new', newMessageRouter(messages));
 
 module.exports = router;

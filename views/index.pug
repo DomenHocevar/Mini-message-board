@@ -2,11 +2,12 @@ extends layout
 
 block content
 
-  h1 Mini message board
+  h1= title
 
   #messageBoard
 
-    button(id="newMessageButton") Add a new message
+    a(href="/new")
+      button(id="newMessageButton") Add a new message
 
     each message in messages 
       div(class="message")

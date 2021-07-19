@@ -7,8 +7,26 @@ a {
   color: #00B7FF;
 }
 
-h1 {
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 50vh;
+  padding: 10px;
+  align-items: flex-end;
+}
+
+label {
+  margin: 10px 0;
+}
+
+h1, h2 {
   text-align: center;
+}
+
+input[type="text"] {
+  flex: 2;
 }
 
 #messageBoard {
